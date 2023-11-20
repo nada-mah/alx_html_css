@@ -212,11 +212,16 @@ button{-webkit-appearance:button;appearance:button}[type=button]::-moz-focus-inn
     text-align: center;
   }
   
+  .nav .nav-item + .nav-item{
+    margin: var(--nav-item-margin);  
+  }
+
   .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+ 
   }
   
   .nav .nav-link {
