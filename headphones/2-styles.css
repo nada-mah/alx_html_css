@@ -76,7 +76,6 @@ header{
 }
 .nav{
 	display: flex;
-	/* flex-wrap: wrap; */
 	justify-content: space-around;
 	align-items:  center;
 	padding-top: 27px;
@@ -92,7 +91,6 @@ header{
 	display: flex;
 	justify-content: space-around;
 	gap: 41px;
-
 }
 
 .nav-items a {
@@ -118,6 +116,13 @@ h1 {
 	font-size: 32px;
 	font-weight: 700;
 	width: 578px;
+}
+h2{
+	text-align: center;
+	font-family: "Source Sans Pro";
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 26px;
 }
 .short-text{
 	font-size: 16px;
@@ -180,20 +185,38 @@ h1 {
 	height: 108px;
 	justify-content: space-evenly;
 	align-items: center;
-	/* border: solid red; */
 }
 .section-body-item p{
 	width: 207px;
 }
 
+.section-body-item img{
+    width: 160px;
+    /* height: 155px; */
+	
+}
 
+.Our-results{
+	background: url(assets/images/headphones_hero_2.jpg);
+	width: 100% ;
+}
+.bottom-overlay{
+	position:relative;
+}
+.overlay{
+	position:absolute;
 
+}
 
 @media screen and (max-width: 770px) {
 	header{
 		background: url(assets/images/headphones_hero_tab.jpg);
 		width: 100% ;
 		height: 800px;
+	}
+	.Our-results{
+		background: url(assets/images/headphones_hero_2tab.jpg);
+		background-size: 100% 900px ;
 	}
 	h1 {
 		font-size: 32px;
@@ -206,15 +229,19 @@ h1 {
 	}
 	.long-text{
 		width: 445px;
-		font-size: 11px;
+		font-size: 16px;
 		font-weight: 300;
 		line-height: 132%; 
 	}
-  }
-  @media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
 	header{
 		background: url(assets/images/headphones_hero_mob.jpg);
 		background-size: 100% 869px ;
+	}
+	.Our-results{
+		background: url(assets/images/headphones_hero_2mob.jpg);
+		background-size: 100% 1491px ;
 	}
 	.Header-section{
 		padding: 200px 0 52px 0;
@@ -224,6 +251,13 @@ h1 {
 		font-weight: 700;
 		width: 80%;
 	}
+	/* h2{
+		text-align: center;
+		font-family: "Source Sans Pro";
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 26px;
+	} */
 	.short-text{
 		font-size: 16px;
 		font-weight: 700;
@@ -264,6 +298,8 @@ h1 {
 		display: flex;
 		height: 1491px;
 		justify-content: center;
+		
 
 	}
-  }
+
+}
