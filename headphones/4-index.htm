@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="2-styles.css" rel="stylesheet">
+    <link href="4-styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="./assets/holberton_school-icon/style.css" rel="stylesheet">
     <title>Headphones</title>
@@ -30,7 +30,7 @@
     </header>
     <main>
         <!-- What we do section -->
-        <section class="what-we-do-section">
+        <section class="column-section">
             <div class="section-head">
                 <h1 class="font-dark">What we do…</h1>
                 <p class="long-text font-dark">
@@ -61,7 +61,7 @@
             </div>
         </section>
         <!--Our results section-->
-        <section class="Our-results what-we-do-section">
+        <section class="Our-results column-section">
             <h1 class="font-white">Our results speak for themselves</h1>
             <p class="long-text font-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div class="section-body">
@@ -103,9 +103,40 @@
                 </div>
             </div>
         </section>
+        <!-- contact section -->
+        <section>
+            <div id="contact-sml" class="column-section">
+                <h1 class="font-dark">Contact us</h1>   
+                <form method="post" action="#">
+                    <div class="feilds font-dark">
+                        <label for="">Name</label>
+                        <input type="text"> 
+                    </div>
+                    <div class="feilds font-dark">
+                        <label for="">Email</label>
+                        <input type="text"> 
+                    </div>
+                    <div class="feilds font-dark">
+                        <label for="">Your message</label>
+                        <input type="text"> 
+                    </div>
+                    <button id="action" class="action-button font-white">CALL TO ACTION</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-
+     <div class="row-container">
+        <div >
+            <img src="./assets/images/logo_headphones.png" alt="logo">
+        </div>
+        <div>
+            <span class="holberton_school-icon-ic_facebook"></span>
+            <span class="holberton_school-icon-ic_twitter"></span>
+            <span class="holberton_school-icon-ic_facebook"></span>
+        </div>
+     </div>
+        <p>©headphones 2020</p>
     </footer>
 </body>
 </html>
