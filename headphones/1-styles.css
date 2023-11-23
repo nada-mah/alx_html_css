@@ -57,31 +57,32 @@ table {
 .font-white {
 	color: var(--color-white);
 	text-align: center;
-	font-family: Source Sans Pro, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-style: normal;
 	line-height: normal;
 }
 .font-dark {
 	color: var(--color-dark-blue);
 	text-align: center;
-	font-family: Source Sans Pro, sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-style: normal;
 	line-height: normal;
 }
-html{
-	width: 100vw ;
-}
+
 header{
 	background: url(assets/images/headphones_hero_1.jpg);
-	width: 100vw;
-	height: auto;
+	width: 100% ;
+	height: 800px;
 }
 .nav{
 	display: flex;
-	flex: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-around;
 	align-items:  center;
 	padding-top: 27px;
+}
+.nav-button{
+	display: none;
 }
 .nav-logo img {
 	width: 161px;
@@ -110,13 +111,13 @@ header{
 .Header-section{
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
-	padding: 312px 381px 105px 382px;
+	padding: 312px 0 105px 0;
 }
 h1 {
 	font-size: 32px;
 	font-weight: 700;
+	width: 578px;
 }
 .short-text{
 	font-size: 16px;
@@ -148,13 +149,13 @@ h1 {
 	font-size: 70px;
 }
 .what-we-do-section{
-	/* border: solid red; */
+	width: 100% ;
+	height: 800px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	display: flex;	
+	justify-content: center;	
 	gap: 97px;
-	padding: 5%;
 }
 .section-head{
 	display: flex;
@@ -167,6 +168,7 @@ h1 {
 	/* border: solid rgb(0, 255, 174); */
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	gap: 58px;
     justify-content: center;
@@ -189,7 +191,81 @@ h1 {
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 770px) {
+	header{
+		background: url(assets/images/headphones_hero_tab.jpg);
+		width: 100% ;
+		height: 800px;
+	}
+	h1 {
+		font-size: 22px;
+		font-weight: 700;
+		width: 404px;
+	}
+	.short-text{
+		font-size: 11px;
+		font-weight: 700;
+	}
+	.long-text{
+		width: 445px;
+		font-size: 11px;
+		font-weight: 300;
+		line-height: 132%; 
+	}
+  }
+  @media screen and (max-width: 480px) {
+	header{
+		background: url(assets/images/headphones_hero_mob.jpg);
+		background-size: 100% 869px ;
+	}
+	.Header-section{
+		padding: 200px 0 52px 0;
+	}
+	h1 {
+		font-size: 16px;
+		font-weight: 700;
+		width: 50%;
+	}
+	.short-text{
+		font-size: 8px;
+		font-weight: 700;
+	}
+	.long-text{
+		width: 50%;
+		font-size: 8px;
+		font-weight: 300;
+		line-height: 132%; 
+	}
 
-	
+	.nav-items {
+		display: none;
+	}
+	.nav-button{
+		display: block;
+		border: transparent;
+		color: var(--color-white);
+		background-color: transparent;
+	}
+	.nav{
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+	}
+	.nav-button:focus + .dropdown{
+			display: block;
+			position: fixed;
+			padding-top: 161px;
+	}
+	.nav-items a{
+		display: flex;
+		flex-direction: column;
+		padding: 10%
+
+
+	}
+	.what-we-do-section{
+		display: flex;
+		height: 869px;
+		justify-content: center;
+
+	}
   }
