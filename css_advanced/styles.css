@@ -55,7 +55,6 @@ button:hover {
 cursor: pointer;
 opacity: .9;
 }
-/* = END BASED = */
 
 /* ============== HEADER ============ */
 header {
@@ -82,7 +81,6 @@ color: var(--color-purple);
 }
 /* ============== END HEADER ============ */
 
-/* ============== MAIN ============ */
 
 /* ===== BANNER =====*/
 .banner .title {
