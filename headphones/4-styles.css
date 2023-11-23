@@ -124,6 +124,7 @@ h2{
 	font-weight: 700;
 	line-height: 26px;
 }
+
 label {
 	display: block;
 	font-size: 14px;
@@ -175,6 +176,13 @@ input{
 	color: #FF6565;
 	font-size: 70px;
 }
+.icon-style:hover{
+	animation: example 2s ease infinite;
+}
+@keyframes example {
+  from { color: var(--color-white); }
+  to { color: var(--color-dark-blue); }
+}
 .column-section{
 	width: 100% ;
 	height: 800px;
@@ -216,6 +224,15 @@ input{
     width: 160px;
     /* height: 155px; */
 	
+}
+
+.section-body-item img {
+		animation: grow 5s ease infinite;
+	  }
+	  @keyframes grow {
+		from { transform: scale(0); }
+		to { transform: scale(1); }
+	  
 }
 
 .Our-results{
